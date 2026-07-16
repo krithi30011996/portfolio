@@ -30,11 +30,22 @@ if (localStorage.getItem('theme') === 'dark') {
   document.documentElement.classList.add('dark');
 }
 
-
- function showMoreCertificates() {
+function toggleCertificates() {
     const card = document.getElementById("certificate4");
-    const button = document.getElementById("viewMoreBtn");
+    const button = document.getElementById("toggleBtn");
 
-    card.classList.remove("hidden");
-    button.style.display = "none";
+    if (card.classList.contains("hidden")) {
+        card.classList.remove("hidden");
+        button.textContent = "View Less";
+    } else {
+        card.classList.add("hidden");
+        button.textContent = "View More";
+
+        // Scroll back to the certificates section
+        document.getElementById("achievements").scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
 }
+ 
