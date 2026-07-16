@@ -471,12 +471,23 @@
 
 </div>
 <div class="text-center mt-8">
-    <button id="toggleBtn"
-        onclick="toggleCertificates()"
-        class="px-8 py-3 border border-gray-500 rounded-full hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">
+
+    <!-- View More -->
+    <button id="viewMoreBtn"
+        onclick="showCertificates()"
+        class="px-8 py-3 border border-gray-500 dark:border-white/30 rounded-full hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">
         View More
     </button>
+
+    <!-- View Less -->
+    <button id="viewLessBtn"
+        onclick="hideCertificates()"
+        class="hidden px-8 py-3 border border-gray-500 dark:border-white/30 rounded-full hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">
+        View Less
+    </button>
+
 </div>
+
 
 
 </section>
