@@ -31,4 +31,10 @@ if (localStorage.getItem('theme') === 'dark') {
 }
 
 
- 
+ function showMoreCertificates() {
+    const card = document.getElementById("certificate4");
+    const button = document.getElementById("viewMoreBtn");
+
+    card.classList.remove("hidden");
+    button.style.display = "none";
+}
