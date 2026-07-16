@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://https://kavipriya-six.vercel.app/">🌐 Live Demo</a> •
+  <a href="https://kavipriya-six.vercel.app/">🌐 Live Demo</a> •
   <a href="https://github.com/krithi30011996">💻 GitHub</a> •
   <a href="https://www.linkedin.com/in/kavipriya-magalingam">🔗 LinkedIn</a>
 </p>
