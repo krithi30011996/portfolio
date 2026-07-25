@@ -47,3 +47,15 @@ function hideCertificates() {
         behavior: "smooth"
     });
 }
+
+function showProjects() {
+    document.querySelectorAll('#work a.hidden').forEach(el => el.classList.remove('hidden'));
+    document.getElementById('viewMoreProjectsBtn').classList.add('hidden');
+    document.getElementById('viewLessProjectsBtn').classList.remove('hidden');
+}
+
+function hideProjects() {
+    document.querySelectorAll('#work a[id^="project"]').forEach(el => el.classList.add('hidden'));
+    document.getElementById('viewMoreProjectsBtn').classList.remove('hidden');
+    document.getElementById('viewLessProjectsBtn').classList.add('hidden');
+}

@@ -283,7 +283,7 @@
                         <img loading="lazy" src="./images/project-icon.png" alt="Projects icon"
                             class="w-7 mt-3 dark:invert">
                         <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Projects</h3>
-                        <p class="text-gray-600 dark:text-white/70 text-sm break-words leading-6">Built 2 web
+                        <p class="text-gray-600 dark:text-white/70 text-sm break-words leading-6">Built 2+ web
                             development projects.</p>
                     </li>
                 </ul>
@@ -404,7 +404,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
 
             <!-- InsiderJobs -->
-            <a href="https://github.com/krithi30011996/CODSOFT-TASK" target="_blank"
+            <a href="https://insiderjobs.kavipriya.in/" target="_blank"
                 class="group rounded-2xl overflow-hidden border border-gray-300 dark:border-white/20 bg-white dark:bg-[#1c0b2d] hover:-translate-y-2 duration-500 hover:shadow-xl">
 
                 <img loading="lazy" src="./images/job.png" alt="InsiderJobs MERN stack job portal screenshot"
@@ -449,31 +449,8 @@
                 </div>
             </a>
 
-            <!-- Portfolio -->
-            <a href="https://kavipriya-six.vercel.app/" target="_blank"
-                class="group rounded-2xl overflow-hidden border border-gray-300 dark:border-white/20 bg-white dark:bg-[#1c0b2d] hover:-translate-y-2 duration-500 hover:shadow-xl">
-
-                <img loading="lazy" src="./images/portfolio.png" alt="Kavipriya personal portfolio website screenshot"
-                    class="w-full h-36 object-cover transition duration-500 group-hover:scale-105">
-
-                <div class="p-4">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-lg font-semibold">Portfolio</h3>
-
-                        <div
-                            class="w-9 h-9 rounded-full border flex items-center justify-center group-hover:bg-lime-300 transition">
-                            <img loading="lazy" src="./images/send-icon.png" alt="" class="w-4">
-                        </div>
-                    </div>
-
-                    <p class="text-sm text-gray-600 dark:text-white/70 mt-2">
-                        Responsive personal portfolio showcasing my skills, projects, and achievements.
-                    </p>
-                </div>
-            </a>
-
-            <!-- RankPilot -->
-            <a href="https://github.com/krithi30011996/SEO_Rank_Tracker" target="_blank"
+             <!-- RankPilot -->
+            <a href="https://seo.kavipriya.in/" target="_blank"
                 class="group rounded-2xl overflow-hidden border border-gray-300 dark:border-white/20 bg-white dark:bg-[#1c0b2d] hover:-translate-y-2 duration-500 hover:shadow-xl">
 
                 <img loading="lazy" src="./images/rank.png" alt="RankPilot AI SEO analyzer dashboard screenshot"
@@ -495,6 +472,43 @@
                     </p>
                 </div>
             </a>
+
+            <!-- Portfolio -->
+            <a id="project4" href="https://www.kavipriya.in/" target="_blank"
+                class="hidden group rounded-2xl overflow-hidden border border-gray-300 dark:border-white/20 bg-white dark:bg-[#1c0b2d] hover:-translate-y-2 duration-500 hover:shadow-xl">
+
+                <img loading="lazy" src="./images/portfolio.png" alt="Kavipriya personal portfolio website screenshot"
+                    class="w-full h-36 object-cover transition duration-500 group-hover:scale-105">
+
+                <div class="p-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold">Portfolio</h3>
+
+                        <div
+                            class="w-9 h-9 rounded-full border flex items-center justify-center group-hover:bg-lime-300 transition">
+                            <img loading="lazy" src="./images/send-icon.png" alt="" class="w-4">
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-gray-600 dark:text-white/70 mt-2">
+                        Responsive personal portfolio showcasing my skills, projects, and achievements.
+                    </p>
+                </div>
+            </a>
+
+            <div class="text-center mt-8">
+            <button id="viewMoreProjectsBtn" onclick="showProjects()"
+                class="px-8 py-3 border border-gray-500 dark:border-white/30 rounded-full hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">
+                View More
+            </button>
+
+            <button id="viewLessProjectsBtn" onclick="hideProjects()"
+                class="hidden px-8 py-3 border border-gray-500 dark:border-white/30 rounded-full hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">
+                View Less
+            </button>
+        </div>
+
+           
 
         </div>
 
