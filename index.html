@@ -72,25 +72,15 @@
 }
 </script>
 
-    <!-- Performance
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
-
-    Tailwind -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-
-    <!-- Your Existing Styles -->
-    <!-- <style type="text/tailwindcss">
-        /* Keep your current Tailwind CSS here */
-    </style> --> 
-
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
 
         @custom-variant dark (&:where(.dark, .dark *));
+
+        html, body {
+          overflow-x: hidden;
+          width: 100%;
+        }
 
         .grid-cols-auto {
           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -141,11 +131,11 @@
     class="overflow-x-hidden font-Outfit leading-8 bg-white text-black dark:bg-[#11001F] dark:text-white transition-colors duration-500">
 
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] hidden">
-        <img loading="lazy" src="./images/header-bg-color.png" alt="Portrait of Kavipriya, MERN Stack Developer" class="w-full">
+        <img loading="lazy" src="./images/header-bg-color.png" alt="Decorative background gradient" class="w-full">
     </div>
     <nav
         class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 bg-white/50 dark:bg-transparent backdrop-blur-sm ">
-        <img loading="lazy" src="./images/kavipriya_logo_3.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+        <img loading="lazy" src="./images/kavipriya_logo_3.png" alt="Kavipriya logo"
             class="w-28 cursor-pointer mr-6 lg:mr-10 dark:invert">
         <ul
             class="hidden md:flex items-center gap-4 lg:gap-6 rounded-full px-6 lg:px-8 py-3 bg-white dark:bg-transparent dark:border dark:border-white/50 shadow-sm bg-opacity-50 serif-text ">
@@ -184,10 +174,10 @@
             <a href="#contact"
                 class="hidden xl:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 serif-text">
                 Contact
-                <img loading="lazy" class="w-3 dark:invert" src="./images/arrow-icon.png"></a>
+                <img loading="lazy" class="w-3 dark:invert" src="./images/arrow-icon.png" alt=""></a>
 
             <button class="block md:hidden ml-3" onclick="openMenu()">
-                <img loading="lazy" src='./images/menu-black.png' alt="Portrait of Kavipriya, MERN Stack Developer"
+                <img loading="lazy" src='./images/menu-black.png' alt="Open menu"
                     class="w-6 dark:invert">
             </button>
 
@@ -198,7 +188,7 @@
             class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 dark:bg-[#2a004a] dark:text-white transition duration-500 serif-text">
 
             <div class="absolute right-6 top-6" onclick="closeMenu()">
-                <img loading="lazy" src="./images/close-black.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                <img loading="lazy" src="./images/close-black.png" alt="Close menu"
                     class="w-5 cursor-pointer dark:invert">
             </div>
             <li><a href="#top" onclick="closeMenu()">Home</a></li>
@@ -213,13 +203,13 @@
 
     <!----- header-->
     <div
-        class="w-full max-w-3xl text-center mx-auto h-screen pt-36 pb-10 px-5 flex flex-col items-center  justify-center gap-5">
+        class="w-full max-w-3xl text-center mx-auto min-h-screen pt-40 pb-10 px-5 flex flex-col items-center justify-center gap-5">
 
-        <img loading="lazy" src="./images/image-2.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+        <img loading="lazy" src="./images/image-2.png" alt="Kavipriya, MERN Stack Developer"
             class="rounded-full w-44 h-44 object-cover object-top ring-4 ring-white dark:ring-white/10 shadow-md">
 
         <h3 class="flex items-center gap-2 text-xl md:text-2xl serif-text">Hi! I'm Kavipriya <img loading="lazy"
-                src="./images/hand-icon.png" alt="Portrait of Kavipriya, MERN Stack Developer" class="w-6"></h3>
+                src="./images/hand-icon.png" alt="" class="w-6"></h3>
 
 
         <h1 class="text-3xl sm:text-5xl lg:text-6xl leading-tight serif-text">MERN Stack Developer & Full Stack Web
@@ -234,32 +224,32 @@
             <a href="#contact"
                 class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2">
                 contact me
-                <img loading="lazy" src="./images/right-arrow-white.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                <img loading="lazy" src="./images/right-arrow-white.png" alt=""
                     class="w-4"></a>
 
             <a href="./images/Kavipriya.Resume (1).pdf" download
                 class="px-10 py-3 border rounded-full border-gray-500 dark:border-white/40 flex items-center gap-2 bg-white dark:bg-transparent dark:text-white">
                 My resume
-                <img loading="lazy" src="./images/download-icon.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                <img loading="lazy" src="./images/download-icon.png" alt=""
                     class="w-4 dark:invert"></a>
         </div>
     </div>
 
     <!---about me-->
-    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20 overflow-hidden">
         <h4 class="text-center mb-2 text-lg serif-text">Introduction</h4>
         <h2 class="text-center text-5xl serif-text">About me</h2>
 
         <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-10">
             <div class="max-w-max mx-auto relative">
-                <img loading="lazy" src="./images/user-1.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                <img loading="lazy" src="./images/user-1.png" alt="Kavipriya working at her desk"
                     class="w-56 sm:w-72 rounded-3xl max-w-none">
 
                 <div
                     class="bg-white dark:bg-[#2a004a] w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
-                    <img loading="lazy" src="./images/circular-text.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                    <img loading="lazy" src="./images/circular-text.png" alt=""
                         class="w-full animate-spin-slow dark:invert">
-                    <img loading="lazy" src="./images/dev-icon.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                    <img loading="lazy" src="./images/dev-icon.png" alt=""
                         class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
 
 
@@ -273,7 +263,7 @@
 
                     <li
                         class="border-[0.5px] border-gray-400 dark:border-white/30 rounded-xl p-5 sm:p-6 w-full overflow-hidden  cursor-pointer hover-light hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] dark:hover:shadow-[4px_4px_0_#fff]">
-                        <img loading="lazy" src="./images/code-icon.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                        <img loading="lazy" src="./images/code-icon.png" alt="Languages icon"
                             class="w-7 mt-3 dark:invert">
                         <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Languages</h3>
                         <p class="text-gray-600 dark:text-white/70 text-sm break-words leading-6">HTML, CSS, Javascript,
@@ -282,7 +272,7 @@
 
                     <li
                         class="border-[0.5px] border-gray-400 dark:border-white/30 rounded-xl p-6 cursor-pointer hover-light hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] dark:hover:shadow-[4px_4px_0_#fff]">
-                        <img loading="lazy" src="./images/edu-icon.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                        <img loading="lazy" src="./images/edu-icon.png" alt="Education icon"
                             class="w-7 mt-3 dark:invert">
                         <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
                         <p class="text-gray-600 dark:text-white/70 text-sm break-words leading-6">B.E. in Computer
@@ -291,7 +281,7 @@
 
                     <li
                         class="border-[0.5px] border-gray-400 dark:border-white/30 rounded-xl p-6 cursor-pointer hover-light hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] dark:hover:shadow-[4px_4px_0_#fff]">
-                        <img loading="lazy" src="./images/project-icon.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                        <img loading="lazy" src="./images/project-icon.png" alt="Projects icon"
                             class="w-7 mt-3 dark:invert">
                         <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Projects</h3>
                         <p class="text-gray-600 dark:text-white/70 text-sm break-words leading-6">Built 2 web
@@ -303,42 +293,42 @@
                 <ul class="flex items-center gap-3 sm:gap-5">
                     <li
                         class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img loading="lazy" src="./images/vscode.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                        <img loading="lazy" src="./images/vscode.png" alt="VS Code"
                             class="w-5 sm:w-7">
                     </li>
 
                     <li
                         class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img loading="lazy" src="./images/nodejs.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                        <img loading="lazy" src="./images/nodejs.png" alt="Node.js"
                             class="w-5 sm:w-7">
                     </li>
 
                     <li
                         class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img loading="lazy" src="./images/mongodb.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                        <img loading="lazy" src="./images/mongodb.png" alt="MongoDB"
                             class="w-5 sm:w-7">
                     </li>
 
                     <li
                         class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img loading="lazy" src="./images/react.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                        <img loading="lazy" src="./images/react.png" alt="React"
                             class="w-5 sm:w-7">
                     </li>
 
                     <li
                         class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img loading="lazy" src="./images/git.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                        <img loading="lazy" src="./images/git.png" alt="Git"
                             class="w-5 sm:w-7">
                     </li>
                     <li
                         class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img loading="lazy" src="./images/postman.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                        <img loading="lazy" src="./images/postman.png" alt="Postman"
                             class="w-5 sm:w-7">
                     </li>
                     <li
                         class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
                         <img loading="lazy" src=" https://cdn.iconscout.com/icon/free/png-256/free-github-logo-icon-svg-download-png-8630395.png?f=webp"
-                            alt="Portrait of Kavipriya, MERN Stack Developer" class="w-5 sm:w-7">
+                            alt="GitHub" class="w-5 sm:w-7">
                     </li>
                 </ul>
 
@@ -357,46 +347,46 @@
         <div class="grid grid-cols-auto gap-6 my-10">
             <div
                 class="flex flex-col border border-gray-400 dark:border-white/30 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] dark:hover:shadow-[4px_4px_0_#fff] cursor-pointer hover-light hover:-translate-y-1 duration-500">
-                <img loading="lazy" src="./images/web-icon.png" alt="Portrait of Kavipriya, MERN Stack Developer" class="w-10 ">
+                <img loading="lazy" src="./images/web-icon.png" alt="Full stack web development icon" class="w-10 ">
                 <h3 class="text-lg my-4 text-gray-700 dark:text-white">Full Stack Web Development</h3>
                 <p class="text-sm text-gray-600 dark:text-white/70 leading-5">Building responsive and scalable web
                     applications using MongoDB, Express.js, React.js, and Node.js.</p>
                 <a href="" class="flex items-center gap-2 text-sm mt-auto pt-5">Read more <img loading="lazy"
-                        src="./images/right-arrow.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                        src="./images/right-arrow.png" alt=""
                         class="dark:invert"></a>
             </div>
 
             <div
                 class="flex flex-col border border-gray-400 dark:border-white/30 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] dark:hover:shadow-[4px_4px_0_#fff] cursor-pointer hover-light hover:-translate-y-1 duration-500">
-                <img loading="lazy" src="./images/service-frontend.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                <img loading="lazy" src="./images/service-frontend.png" alt="Frontend development icon"
                     class="w-10 ">
                 <h3 class="text-lg my-4 text-gray-700 dark:text-white">Frontend Development</h3>
                 <p class="text-sm text-gray-600 dark:text-white/70 leading-5">Creating modern, interactive, and
                     responsive user interfaces using HTML, CSS, JavaScript, React.js, and Tailwind CSS.</p>
                 <a href="" class="flex items-center gap-2 text-sm mt-auto pt-5">Read more <img loading="lazy"
-                        src="./images/right-arrow.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                        src="./images/right-arrow.png" alt=""
                         class="dark:invert"></a>
             </div>
 
             <div
                 class="flex flex-col border border-gray-400 dark:border-white/30 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] dark:hover:shadow-[4px_4px_0_#fff] cursor-pointer hover-light hover:-translate-y-1 duration-500">
-                <img loading="lazy" src="./images/service-ui.png" alt="Portrait of Kavipriya, MERN Stack Developer" class="w-10 ">
+                <img loading="lazy" src="./images/service-ui.png" alt="UI implementation icon" class="w-10 ">
                 <h3 class="text-lg my-4 text-gray-700 dark:text-white">UI Implementation</h3>
                 <p class="text-sm text-gray-600 dark:text-white/70 leading-5">Converting UI/UX designs into
                     pixel-perfect, responsive web pages with smooth animations and excellent user experience.</p>
                 <a href="" class="flex items-center gap-2 text-sm mt-auto pt-5">Read more <img loading="lazy"
-                        src="./images/right-arrow.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                        src="./images/right-arrow.png" alt=""
                         class="dark:invert"></a>
             </div>
 
             <div
                 class="flex flex-col border border-gray-400 dark:border-white/30 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] dark:hover:shadow-[4px_4px_0_#fff] cursor-pointer hover-light hover:-translate-y-1 duration-500">
-                <img loading="lazy" src="./images/service-api.png" alt="Portrait of Kavipriya, MERN Stack Developer" class="w-10 ">
+                <img loading="lazy" src="./images/service-api.png" alt="REST API development icon" class="w-10 ">
                 <h3 class="text-lg my-4 text-gray-700 dark:text-white">REST API Development</h3>
                 <p class="text-sm text-gray-600 dark:text-white/70 leading-5">Developing secure RESTful APIs for
                     authentication, data management, and seamless communication between frontend and backend.</p>
                 <a href="" class="flex items-center gap-2 text-sm mt-auto pt-5">Read more <img loading="lazy"
-                        src="./images/right-arrow.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                        src="./images/right-arrow.png" alt=""
                         class="w-4 dark:invert"></a>
             </div>
 
@@ -411,47 +401,14 @@
         <h2 class="text-center text-5xl serif-text">My latest work</h2>
         <p class="text-center max-w-2xl mx-auto mt-5 mb-12 serif-text">A selection of projects I've worked on —
             showcasing responsive design, clean UI, and practical front-end and full-stack development.</p>
-        <!-- <div class="grid grid-cols-1 sm:grid-cols-2 my-10 gap-5 max-w-2xl mx-auto">
-            <div
-                class="aspect-[4/3] bg-[url('./images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-                <div
-                    class="bg-white dark:bg-[#2a004a] dark:text-white w-11/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                    <div>
-                        <h2 class="font-semibold">InsiderJobs</h2>
-                        <p class="text-sm text-gray-700 dark:text-white/70">MERN Stack Job Portal</p>
-                    </div>
 
-                    <div class="border rounded-full border-black dark:border-white w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] dark:shadow-[2px_2px_0_#fff] group-hover:bg-lime-300 transition">
-                        <img src="./images/send-icon.png" alt="Portrait of Kavipriya, MERN Stack Developer"="" class="w-5">
-                    </div>
-
-                </div>
-            </div>
-
-             <div
-                class="aspect-[4/3] bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-                <div
-                    class="bg-white dark:bg-[#2a004a] dark:text-white w-11/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                    <div>
-                        <h2 class="font-semibold">QuizSphere</h2>
-                        <p class="text-sm text-gray-700 dark:text-white/70">MERN Stack Quiz Platform</p>
-                    </div>
-
-                    <div class="border rounded-full border-black dark:border-white w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] dark:shadow-[2px_2px_0_#fff] group-hover:bg-lime-300 transition">
-                        <img src="./images/send-icon.png" alt="Portrait of Kavipriya, MERN Stack Developer"="" class="w-5">
-                    </div>
-
-                </div>
-            </div>
-
-        </div> -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
 
             <!-- InsiderJobs -->
             <a href="https://github.com/krithi30011996/CODSOFT-TASK" target="_blank"
                 class="group rounded-2xl overflow-hidden border border-gray-300 dark:border-white/20 bg-white dark:bg-[#1c0b2d] hover:-translate-y-2 duration-500 hover:shadow-xl">
 
-                <img loading="lazy" src="./images/job.png"
+                <img loading="lazy" src="./images/job.png" alt="InsiderJobs MERN stack job portal screenshot"
                     class="w-full h-36 object-cover transition duration-500 group-hover:scale-105">
 
                 <div class="p-4">
@@ -460,7 +417,7 @@
 
                         <div
                             class="w-9 h-9 rounded-full border flex items-center justify-center group-hover:bg-lime-300 transition">
-                            <img loading="lazy" src="./images/send-icon.png" class="w-4">
+                            <img loading="lazy" src="./images/send-icon.png" alt="" class="w-4">
                         </div>
                     </div>
 
@@ -474,7 +431,7 @@
             <a href="https://github.com/krithi30011996/CODSOFT" target="_blank"
                 class="group rounded-2xl overflow-hidden border border-gray-300 dark:border-white/20 bg-white dark:bg-[#1c0b2d] hover:-translate-y-2 duration-500 hover:shadow-xl">
 
-                <img loading="lazy" src="./images/quiz.png"
+                <img loading="lazy" src="./images/quiz.png" alt="QuizSphere MERN stack quiz platform screenshot"
                     class="w-full h-36 object-cover transition duration-500 group-hover:scale-105">
 
                 <div class="p-4">
@@ -483,7 +440,7 @@
 
                         <div
                             class="w-9 h-9 rounded-full border flex items-center justify-center group-hover:bg-lime-300 transition">
-                            <img loading="lazy" src="./images/send-icon.png" class="w-4">
+                            <img loading="lazy" src="./images/send-icon.png" alt="" class="w-4">
                         </div>
                     </div>
 
@@ -497,7 +454,7 @@
             <a href="https://kavipriya-six.vercel.app/" target="_blank"
                 class="group rounded-2xl overflow-hidden border border-gray-300 dark:border-white/20 bg-white dark:bg-[#1c0b2d] hover:-translate-y-2 duration-500 hover:shadow-xl">
 
-                <img loading="lazy" src="./images/portfolio.png"
+                <img loading="lazy" src="./images/portfolio.png" alt="Kavipriya personal portfolio website screenshot"
                     class="w-full h-36 object-cover transition duration-500 group-hover:scale-105">
 
                 <div class="p-4">
@@ -506,7 +463,7 @@
 
                         <div
                             class="w-9 h-9 rounded-full border flex items-center justify-center group-hover:bg-lime-300 transition">
-                            <img loading="lazy" src="./images/send-icon.png" class="w-4">
+                            <img loading="lazy" src="./images/send-icon.png" alt="" class="w-4">
                         </div>
                     </div>
 
@@ -520,7 +477,7 @@
             <a href="https://github.com/krithi30011996/SEO_Rank_Tracker" target="_blank"
                 class="group rounded-2xl overflow-hidden border border-gray-300 dark:border-white/20 bg-white dark:bg-[#1c0b2d] hover:-translate-y-2 duration-500 hover:shadow-xl">
 
-                <img loading="lazy" src="./images/rank.png"
+                <img loading="lazy" src="./images/rank.png" alt="RankPilot AI SEO analyzer dashboard screenshot"
                     class="w-full h-36 object-cover transition duration-500 group-hover:scale-105">
 
                 <div class="p-4">
@@ -529,7 +486,7 @@
 
                         <div
                             class="w-9 h-9 rounded-full border flex items-center justify-center group-hover:bg-lime-300 transition">
-                            <img loading="lazy" src="./images/send-icon.png" class="w-4">
+                            <img loading="lazy" src="./images/send-icon.png" alt="" class="w-4">
                         </div>
                     </div>
 
@@ -558,7 +515,7 @@
             <a href="./images/aws2.pdf" target="_blank"
                 class="group bg-white dark:bg-[#1c0b2d] border border-gray-300 dark:border-white/20 rounded-2xl overflow-hidden hover:-translate-y-2 transition duration-500 hover:shadow-lg">
 
-                <img loading="lazy" src="./images/aws2.png"
+                <img loading="lazy" src="./images/aws2.png" alt="AWS Foundations certificate"
                     class="w-full h-32 object-cover group-hover:scale-105 transition duration-500">
 
                 <div class="p-3">
@@ -574,7 +531,7 @@
             <a href="./images/awscertificate.pdf" target="_blank"
                 class="group bg-white dark:bg-[#1c0b2d] border border-gray-300 dark:border-white/20 rounded-2xl overflow-hidden hover:-translate-y-2 transition duration-500 hover:shadow-lg">
 
-                <img loading="lazy" src="./images/aws.png"
+                <img loading="lazy" src="./images/aws.png" alt="AWS Cloud Practitioner Essentials certificate"
                     class="w-full h-32 object-cover group-hover:scale-105 transition duration-500">
 
                 <div class="p-3">
@@ -590,7 +547,7 @@
             <a href="./images/certificate.fsd.jpeg" target="_blank"
                 class="group bg-white dark:bg-[#1c0b2d] border border-gray-300 dark:border-white/20 rounded-2xl overflow-hidden hover:-translate-y-2 transition duration-500 hover:shadow-lg">
 
-                <img loading="lazy" src="./images/certificate.fsd.jpeg"
+                <img loading="lazy" src="./images/certificate.fsd.jpeg" alt="Full Stack Development certificate"
                     class="w-full h-32 object-cover group-hover:scale-105 transition duration-500">
 
                 <div class="p-3">
@@ -606,7 +563,7 @@
             <a id="certificate4" href="./images/google-cloud-cybersecurity-certificate.png" target="_blank"
                 class="hidden group bg-white dark:bg-[#1c0b2d] border border-gray-300 dark:border-white/20 rounded-2xl overflow-hidden hover:-translate-y-2 transition duration-500 hover:shadow-lg">
 
-                <img loading="lazy" src="./images/google-cloud-cybersecurity-certificate.png"
+                <img loading="lazy" src="./images/google-cloud-cybersecurity-certificate.png" alt="Google Cloud CyberSecurity certificate"
                     class="w-full h-32 object-cover group-hover:scale-105 transition duration-500">
 
                 <div class="p-3">
@@ -667,7 +624,7 @@
             <button type="submit"
                 class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 dark:bg-white/90 text-white dark:text-black rounded-full mx-auto hover:bg-black dark:hover:bg-white">Submit
                 now
-                <img loading="lazy" src="./images/right-arrow-white.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                <img loading="lazy" src="./images/right-arrow-white.png" alt=""
                     class="w-4 dark:invert">
             </button>
         </form>
@@ -676,10 +633,10 @@
     <!---footer-->
     <div class="mt-20">
         <div class="text-center">
-            <img loading="lazy" src="./images/kavipriya_logo_3.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+            <img loading="lazy" src="./images/kavipriya_logo_3.png" alt="Kavipriya logo"
                 class="w-36 mx-auto mb-2 dark:invert">
             <div class="w-max flex items-center gap-2 mx-auto">
-                <img loading="lazy" src="./images/mail_icon.png" alt="Portrait of Kavipriya, MERN Stack Developer"
+                <img loading="lazy" src="./images/mail_icon.png" alt=""
                     class="w-6 dark:invert">kavipriyamagalingam@gmail.com
             </div>
         </div>
