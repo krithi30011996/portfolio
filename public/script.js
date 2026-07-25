@@ -76,7 +76,7 @@ const certData = {
         file: "./images/awscertificate.pdf"
     },
     "certificate.fsd": {
-        category: "NoviTech · 2026",
+        category: "NoviTech · 2025",
         title: "Full Stack Development",
         desc: "Completed a full stack development program covering front-end and back-end web technologies.",
         image: "./images/certificate.fsd.jpeg",
