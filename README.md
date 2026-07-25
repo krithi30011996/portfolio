@@ -1,5 +1,5 @@
 <p align="center">
-# 💼 Personal Portfolio
+💼 Personal Portfolio
 </p>
 
 <p align="center">
