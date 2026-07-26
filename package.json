@@ -1,0 +1,20 @@
+{
+  "name": "kavipriya-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Kavipriya - MERN Stack Developer",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Static site - no dev server needed'",
+    "build": "echo 'Static site - no build needed'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "portfolio",
+    "static-site"
+  ],
+  "author": "Kavipriya",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
