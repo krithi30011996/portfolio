@@ -119,15 +119,14 @@ const projectData = {
         desc: "A MERN Stack job portal with authentication, job posting, application tracking, and a clean dashboard experience for both recruiters and job seekers.",
         image: "./images/job.png",
         live: "https://insiderjobs.kavipriya.in/",
-        github: "https://github.com/krithi30011996"
+        github: "https://github.com/krithi30011996/Insiderjobs"
     },
     quizsphere: {
         category: "MERN Stack · Quiz Platform",
         title: "QuizSphere",
         desc: "An interactive MERN quiz platform supporting quiz creation, secure authentication, and real-time score tracking.",
         image: "./images/quiz.png",
-        live: "https://github.com/krithi30011996/CODSOFT",
-        github: "https://github.com/krithi30011996/CODSOFT"
+        github: "https://github.com/krithi30011996/QuizSphere"
     },
     rankpilot: {
         category: "AI Tool · SEO Analyzer",
@@ -135,7 +134,7 @@ const projectData = {
         desc: "Instant AI-driven SEO audits with performance scores, keyword analysis, and actionable recommendations to improve site ranking.",
         image: "./images/rank.png",
         live: "https://seo.kavipriya.in/",
-        github: "https://github.com/krithi30011996"
+        github: "https://github.com/krithi30011996/SEO_Rank_Tracker"
     },
     portfolio: {
         category: "Personal Website",
@@ -143,7 +142,7 @@ const projectData = {
         desc: "Responsive personal portfolio showcasing my skills, projects, and achievements, built with Tailwind CSS.",
         image: "./images/portfolio.png",
         live: "https://www.kavipriya.in/",
-        github: "https://github.com/krithi30011996"
+        github: "https://github.com/krithi30011996/portfolio"
     }
 };
 
