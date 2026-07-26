@@ -116,7 +116,7 @@ const projectData = {
     insiderjobs: {
         category: "MERN Stack · Job Portal",
         title: "InsiderJobs",
-        desc: "A MERN Stack job portal with authentication, job posting, application tracking, and a clean dashboard experience for both recruiters and job seekers.",
+        desc: "A MERN Stack job portal with authentication, job posting, application tracking, and role-based dashboards for job seekers and recruiters.",
         image: "./images/job.png",
         live: "https://insiderjobs.kavipriya.in/",
         github: "https://github.com/krithi30011996/Insiderjobs"
@@ -124,22 +124,23 @@ const projectData = {
     quizsphere: {
         category: "MERN Stack · Quiz Platform",
         title: "QuizSphere",
-        desc: "An interactive MERN quiz platform supporting quiz creation, secure authentication, and real-time score tracking.",
+        desc: "An interactive MERN quiz platform with quiz creation, authentication, real-time scoring, and result tracking.",
         image: "./images/quiz.png",
+        live: "",
         github: "https://github.com/krithi30011996/QuizSphere"
     },
     rankpilot: {
-        category: "AI Tool · SEO Analyzer",
+        category: "MERN Stack · AI SEO Tool",
         title: "RankPilot",
-        desc: "Instant AI-driven SEO audits with performance scores, keyword analysis, and actionable recommendations to improve site ranking.",
+        desc: "An AI-driven SEO analyzer delivering instant audits with performance scores, keyword analysis, and actionable optimization recommendations.",
         image: "./images/rank.png",
         live: "https://seo.kavipriya.in/",
         github: "https://github.com/krithi30011996/SEO_Rank_Tracker"
     },
     portfolio: {
-        category: "Personal Website",
+        category: "MERN Stack · Personal Site",
         title: "Portfolio",
-        desc: "Responsive personal portfolio showcasing my skills, projects, and achievements, built with Tailwind CSS.",
+        desc: "A responsive personal portfolio built to showcase skills, projects, and achievements with light/dark mode support.",
         image: "./images/portfolio.png",
         live: "https://www.kavipriya.in/",
         github: "https://github.com/krithi30011996/portfolio"
@@ -147,15 +148,23 @@ const projectData = {
 };
 
 function openProjectModal(id) {
-    const proj = projectData[id];
-    if (!proj) return;
+    const project = projectData[id];
+    if (!project) return;
 
-    document.getElementById('modalProjectImage').src = proj.image;
-    document.getElementById('modalProjectCategory').innerText = proj.category;
-    document.getElementById('modalProjectTitle').innerText = proj.title;
-    document.getElementById('modalProjectDesc').innerText = proj.desc;
-    document.getElementById('modalProjectLive').href = proj.live;
-    document.getElementById('modalProjectGithub').href = proj.github;
+    document.getElementById('modalProjectImage').src = project.image;
+    document.getElementById('modalProjectCategory').innerText = project.category;
+    document.getElementById('modalProjectTitle').innerText = project.title;
+    document.getElementById('modalProjectDesc').innerText = project.desc;
+
+    const liveBtn = document.getElementById('modalProjectLive');
+    if (project.live) {
+        liveBtn.href = project.live;
+        liveBtn.classList.remove('hidden');
+    } else {
+        liveBtn.classList.add('hidden');
+    }
+
+    document.getElementById('modalProjectGithub').href = project.github;
 
     document.getElementById('projectModal').classList.remove('hidden');
     document.body.style.overflow = 'hidden';
@@ -173,4 +182,8 @@ document.addEventListener('DOMContentLoaded', function () {
             if (e.target === modal) closeProjectModal();
         });
     }
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeProjectModal();
 });
