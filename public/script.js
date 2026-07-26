@@ -49,13 +49,13 @@ function hideCertificates() {
 }
 
 function showProjects() {
-    document.querySelectorAll('project4').classList.remove('hidden');
+    document.getElementById('project4').classList.remove('hidden');
     document.getElementById('viewMoreProjectsBtn').classList.add('hidden');
     document.getElementById('viewLessProjectsBtn').classList.remove('hidden');
 }
 
 function hideProjects() {
-    document.querySelectorAll('project4').classList.add('hidden');
+    document.getElementById('project4').classList.add('hidden');
     document.getElementById('viewMoreProjectsBtn').classList.remove('hidden');
     document.getElementById('viewLessProjectsBtn').classList.add('hidden');
 }
