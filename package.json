@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "type": "module",
+  "scripts": {
+    "dev": "echo 'Static site - open public/index.html in browser'",
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": ["portfolio", "static-site"],
+  "author": "Kavipriya",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/analytics": "^1.6.1"
+  }
+}
