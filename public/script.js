@@ -110,3 +110,68 @@ function closeCertModal() {
     document.getElementById('certModal').classList.add('hidden');
     document.body.style.overflow = '';
 }
+
+
+const projectData = {
+    insiderjobs: {
+        category: "MERN Stack · Job Portal",
+        title: "InsiderJobs",
+        desc: "A MERN Stack job portal with authentication, job posting, application tracking, and a clean dashboard experience for both recruiters and job seekers.",
+        image: "./images/job.png",
+        live: "https://insiderjobs.kavipriya.in/",
+        github: "https://github.com/krithi30011996"
+    },
+    quizsphere: {
+        category: "MERN Stack · Quiz Platform",
+        title: "QuizSphere",
+        desc: "An interactive MERN quiz platform supporting quiz creation, secure authentication, and real-time score tracking.",
+        image: "./images/quiz.png",
+        live: "https://github.com/krithi30011996/CODSOFT",
+        github: "https://github.com/krithi30011996/CODSOFT"
+    },
+    rankpilot: {
+        category: "AI Tool · SEO Analyzer",
+        title: "RankPilot",
+        desc: "Instant AI-driven SEO audits with performance scores, keyword analysis, and actionable recommendations to improve site ranking.",
+        image: "./images/rank.png",
+        live: "https://seo.kavipriya.in/",
+        github: "https://github.com/krithi30011996"
+    },
+    portfolio: {
+        category: "Personal Website",
+        title: "Portfolio",
+        desc: "Responsive personal portfolio showcasing my skills, projects, and achievements, built with Tailwind CSS.",
+        image: "./images/portfolio.png",
+        live: "https://www.kavipriya.in/",
+        github: "https://github.com/krithi30011996"
+    }
+};
+
+function openProjectModal(id) {
+    const proj = projectData[id];
+    if (!proj) return;
+
+    document.getElementById('modalProjectImage').src = proj.image;
+    document.getElementById('modalProjectCategory').innerText = proj.category;
+    document.getElementById('modalProjectTitle').innerText = proj.title;
+    document.getElementById('modalProjectDesc').innerText = proj.desc;
+    document.getElementById('modalProjectLive').href = proj.live;
+    document.getElementById('modalProjectGithub').href = proj.github;
+
+    document.getElementById('projectModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeProjectModal() {
+    document.getElementById('projectModal').classList.add('hidden');
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('projectModal');
+    if (modal) {
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) closeProjectModal();
+        });
+    }
+});
