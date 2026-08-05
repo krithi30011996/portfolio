@@ -142,7 +142,7 @@ const projectData = {
         title: "Portfolio",
         desc: "A responsive personal portfolio built to showcase skills, projects, and achievements with light/dark mode support.",
         image: "./images/portfolio.png",
-        live: "https://kavipriya.in/",
+        live: "https://kavipriya.in",
         github: "https://github.com/krithi30011996/portfolio"
     }
 };

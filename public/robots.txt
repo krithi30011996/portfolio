@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://kavipriya.in/sitemap.xml
+Sitemap: https://kavipriya.insitemap.xml
